@@ -1,0 +1,305 @@
+* {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	font-size: 1em;
+	font-weight: 100;
+	font-family: adelle-sans,"Helvetica Neue",Arial,sans-serif;
+}
+
+body {
+	width: 100%;
+	line-height: 1.5;
+}
+
+/*Block placement */
+	/*HEADER*/
+header {
+	position: fixed;
+	width: 100%;
+	background-color: #e9edf3;
+	z-index: 10;
+}
+
+.nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;	
+	padding: 1em;
+}
+
+.nav-left nav, .nav-right nav {
+	margin-top: 0.5em;
+}
+
+.nav-left,.nav-right, .nav-right .link {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-left {
+	margin: .25em 1em .25em 0em !important;
+}
+
+	/*MAIN*/
+.title {
+	padding: 1em !important;
+	background-color: #e9edf3;
+}
+
+main {
+	padding-top: 55px;
+}
+
+#whatabout span {
+	width: 158px;
+	height: 158px;
+	display: block;
+	margin: 0 auto;
+}
+
+
+#whatabout, footer {
+	background-color: #3b414f;
+}
+
+#whatabout dl {
+	display: flex;
+	justify-content: space-between;
+}
+
+#offer, #partners {
+	background-color: #e9edf3;
+}
+
+/* ===========================================*/
+
+/* Styles of the markups */
+
+.logo img {
+	width: 168px;
+	margin-right: 1.5em;
+}
+
+.Garamond {
+	font-family: 'EB Garamond', serif;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 2.2em 0;
+}
+
+.Garamond-mini {
+	font-family: 'EB Garamond', serif;
+	font-size: 1.25em;;
+	text-align: center;
+	padding: 0 0 1em;
+}
+
+h1 {
+	font-size: 2.625em;
+	text-align: center;
+	margin: .7em 0 .95em;
+}
+
+h2 {
+	font-size: 2em ;
+	text-align: center ;
+	padding: 2.5em 0 0 0 ;
+	font-weight: 400;
+} 
+
+.likeh1 {
+	font-size: 2.625em;
+	font-weight: 100;
+	padding: 1em 0 0 0;
+}
+
+	/* HEADER */
+
+nav a {
+	color: black;
+	text-decoration: none;
+	padding: 0.36em 0;
+	margin-left: 1em;
+}
+
+a {
+		color: black;
+	text-decoration: none;
+}
+
+header p {
+	height: 20px;
+	width: 100px;
+	padding: 5px;
+	color:white;
+	background-color: #3093f7;
+	border: black 1px solid;
+	border-radius: 10px 0 0 10px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.sign {
+	width: 80px;
+	color: black;
+	background-color: white;
+	border-radius: 0 10px 10px 0px;
+}
+
+.link {
+	padding: 0em 1.25em .4em;
+	margin-right: 1em;
+}
+
+.link p {
+	font-weight: 600;
+}
+
+	/*MAIN*/
+
+dd,dt {
+	text-align: center;
+}
+
+dt {
+	margin: 0.5em 0;
+	color: white;
+	font-size:1.25em;
+	font-weight: 600;
+}
+
+dd {
+	color: #B2B5BB;
+	margin: 1em 0;
+}
+
+#whatabout a {
+	padding: 2.75em 1.25em;
+}
+
+.try {
+	background-color: #3093f7;
+	border: black 1px solid;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 1.15em;
+	color: white;
+	text-align: center;
+	padding: 0.5em 2em 0.55em;
+}
+
+.try-mini {
+	font-weight: 400;
+	padding: 0.5em 1em;
+}
+
+#offer, #cloud {
+	text-align: center;
+}
+
+.subscribecomment {
+	display: block;
+    font-size: .875em;
+    margin: 1em 0;
+    padding: 0.5em 2em 0.55em;
+    text-align: center;
+}
+
+#offer img {
+	width:60%;
+}
+
+.herotxt {
+	max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+}
+
+.services {
+	width: 60%;
+	margin-left: calc(50% - 30%);
+	display: flex;
+}
+
+.services-in {
+	padding: 0 2em 0 2em;
+	width:50%;
+}
+
+.in2 {
+	border-left: 1px dotted grey;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 1.5em;
+	margin: 0.5em 0;
+}
+.cond {
+	margin: 2em 0;
+}
+
+#partners img {
+	width: 90%;
+	margin-left: calc(50% - 45%);
+	padding-bottom: 3em;
+}
+
+
+/*FORM copied from source code*/
+#form {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	margin-left: calc(50% - 15%);
+	text-align: center;
+
+}
+
+fieldset {
+	border: none;
+}
+
+.form-hint, .display_none_mobile {
+	display: none;
+}
+
+.icon img {
+	width: 1.5em;
+}
+
+.icon {
+	display: inline-block;
+    vertical-align: middle;
+    border-right: 1px solid #727C8E;
+    height: 100%;
+    padding:0.5em;
+}
+
+#customBtn{
+	border: 1px solid #727C8E;
+}
+
+	/*FOOTER*/
+
+footer ul {
+	display: flex;
+	justify-content: center;
+}
+
+footer ul li {
+	padding: 2em 0.5em;
+}
+
+footer a {
+	display: block;
+	width: 40px;
+	text-align: center;
+	font-size: 1.5em;
+	border-radius: 10px;
+	background-color: #b0b5c0;
+	color: #3b414f;
+}

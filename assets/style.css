@@ -14,18 +14,28 @@ body {
 
 /*Block placement */
 	/*HEADER*/
+
 header {
 	position: fixed;
 	width: 100%;
 	background-color: #e9edf3;
 	z-index: 10;
+	transition: all ease 0.5s;
+	left:0;
+	right: 0;
+	padding:2em 0.8em;
+	transform: scaleX(1.02);
+}
+
+.sticky {
+	transform: none;
+	padding: 0.5em 1em;
 }
 
 .nav {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;	
-	padding: 1em;
 }
 
 .nav-left nav, .nav-right nav {
@@ -98,7 +108,7 @@ main {
 h1 {
 	font-size: 2.625em;
 	text-align: center;
-	margin: .7em 0 .95em;
+	margin: 0.8em 0 .95em;
 }
 
 h2 {
@@ -149,7 +159,7 @@ header p {
 
 .link {
 	padding: 0em 1.25em .4em;
-	margin-right: 1em;
+	
 }
 
 .link p {
@@ -222,6 +232,7 @@ dd {
 	width: 60%;
 	margin-left: calc(50% - 30%);
 	display: flex;
+	margin-bottom: 7em;
 }
 
 .services-in {
@@ -281,7 +292,48 @@ fieldset {
 
 #customBtn{
 	border: 1px solid #727C8E;
+	text-align: left;
 }
+
+#customBtn .display_only_on_mobile {
+	text-align: center;
+}
+
+.field_email, #try-button, .or_separator {
+	margin-bottom: 1em;
+	width: 100%;
+}
+
+.or_separator {
+	position: relative;
+}
+
+.or_separator span {
+	font-family: 'EB Garamond';
+}
+
+.or_separator:before {
+	content: '';
+	position: absolute;
+	color: black;
+	width: 11em;
+	height: 1px;
+	background-color: black;
+	left: 0;
+	top: 50%;
+}
+
+.or_separator:after {
+	content: '';
+	position: absolute;
+	color: black;
+	width: 11em;
+	height: 1px;
+	background-color: black;
+	right: 0;
+	top: 50%;
+}
+
 
 	/*FOOTER*/
 
@@ -302,4 +354,11 @@ footer a {
 	border-radius: 10px;
 	background-color: #b0b5c0;
 	color: #3b414f;
+}
+
+/* ANIMATIONS */
+
+#whatabout a:hover{
+	background-color: rgb(62, 68, 83);
+	/*origin color: rgb(59, 65, 79)*/
 }
